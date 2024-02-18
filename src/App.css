@@ -1,5 +1,23 @@
 * {
-  font-family: 'Bebas Neue', sans-serif;
+  /* font-family: 'Bebas Neue', sans-serif; */
+}
+
+@font-face {
+  font-family: headFont;
+  src: url(codeB.otf);
+}
+
+@font-face {
+  font-family: marqueeText;
+  src: url(BasisGrotesqueArabicPro-Light.ttf);
+}
+
+.main-head {
+  font-family: headFont;
+}
+
+.mText {
+  font-family: marqueeText;
 }
 
 .accordion-button:hover {

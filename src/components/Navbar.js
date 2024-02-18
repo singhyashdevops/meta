@@ -6,16 +6,16 @@ import { Link } from "react-router-dom"
 
 export default function Navbar(props) {
 
-    let btnStyle = { fontSize: "15px" }
+    // let btnStyle = { fontSize: "15px" }
 
-    let headStyle = { fontSize: "35px", letterSpacing: "2px", color: props.mode === "light" ? "#740000" : "#76b1ff", fontWeight: "bold" }
+    let headStyle = { fontSize: "35px", color: props.mode === "light" ? "#740000" : "#76b1ff"}
 
     let navStyle = { color: props.mode === "light" ? "red" : "#0070ff", letterSpacing: "2px", fontSize: "20px" }
 
     return (
         <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
             <div className="container-fluid">
-                <Link className="navbar-brand" style={headStyle} to="/">{props.title}</Link>
+                <Link className="navbar-brand main-head" style={headStyle} to="/">{props.title}</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
