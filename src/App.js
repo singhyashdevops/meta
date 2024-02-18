@@ -1,11 +1,12 @@
-import logo from './logo.svg';
+/* eslint-disable jsx-a11y/alt-text */
+// import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-plain.svg" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
