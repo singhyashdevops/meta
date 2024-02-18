@@ -9,10 +9,10 @@ import Navbar from './components/Navbar'
 // import TextUtils from './components/TextUtils'
 // import MovingText from "./components/MovingText"
 // import CardMenu from './components/CardMenu'
-// import Contact from './components/Contact'
-// import LogForm from './components/LogForm'
-// import Tags from './components/Tags'
-// import Companies from './components/Companies'
+import Contact from './components/Contact'
+import LogForm from './components/LogForm'
+import Tags from './components/Tags'
+import Companies from './components/Companies'
 
 
 export default function App() {
