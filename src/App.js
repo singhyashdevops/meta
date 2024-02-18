@@ -32,7 +32,7 @@ export default function App() {
   let title = "Meta-Verse"
 
   return (
-    <div style={{ backgroundColor: mode === "light" ? "white" : "black" }} >
+    <div style={{ backgroundColor: mode === "light" ? "white" : "red" }} >
       <MovingText mode={mode} />
       <Navbar title={title} mode={mode} text={text} toggleMode={toggleMode} />
       <Routes>
