@@ -2,8 +2,8 @@
 /* eslint-disable jsx-a11y/alt-text */
 // import logo from './logo.svg';
 import './App.css';
-// import React, { useState } from 'react'
-// import { Routes, Route } from "react-router-dom"
+import React, { useState } from 'react'
+import { Routes, Route } from "react-router-dom"
 // import Navbar from './components/Navbar'
 // import Footer from "./components/Footer"
 // import TextUtils from './components/TextUtils'
