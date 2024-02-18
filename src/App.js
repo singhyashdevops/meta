@@ -21,7 +21,7 @@ export default function App() {
       <header className="App-header">
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-plain.svg" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit <code>src/App.jsx</code> and save to reload.
         </p>
         <a
           className="App-link"
