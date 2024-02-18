@@ -131,6 +131,9 @@ export default function TextUtils(props) {
             </div >
             <div className=" container my-5">
 
+            <p htmlFor="examplehtmlformControlTextarea1 " className="form-label my-5" style={headStyle}>TEXT CALCULATOR</p>
+
+
                 <p style={{ fontSize: "25px", letterSpacing: "2px", color: props.mode === "light" ? "black" : "white" }} className='my-5'>1. There are {text.length}  characters and {text.split(" ").length} words in the text area</p>
 
                 <p style={{ fontSize: "25px", letterSpacing: "2px", color: props.mode === "light" ? "black" : "white" }} className='my-5'>2. With slow speed you'll be able to read in {text.split(" ").length * 0.08} mins.</p>
@@ -183,26 +186,46 @@ export default function TextUtils(props) {
 
                 <p htmlFor="examplehtmlformControlTextarea1 " className="form-label my-5" style={paraStyle}>This is an index to notable programming languages, in current or historical use. Dialects of BASIC, esoteric programming languages, and markup languages are not included. A programming language does not need to be imperative or Turing-complete, but must be executable and so does not include markup languages such as HTML or XML, but does include domain-specific languages such as SQL and its dialects.</p>
 
-                <button type="button" style={buttons} className="bit btn text-light mx-1 my-2">C</button>
-                <button type="button" style={buttons} className="bit btn text-light mx-1 my-2">JAVASCRIPT</button>
-                <button type="button" style={buttons} className="bit btn text-light mx-1 my-2">C#</button>
-                <button type="button" style={buttons} className="bit btn text-light mx-1 my-2">JAVA</button>
-                <button type="button" style={buttons} className="bit btn text-light mx-1 my-2">TYPESCRIPT</button>
-                <button type="button" style={buttons} className="bit btn text-light mx-1 my-2">HTML</button>
-                <button type="button" style={buttons} className="bit btn text-light mx-1 my-2">KOTLIN</button>
-                <button type="button" style={buttons} className="bit btn text-light mx-1 my-2">RUBY ON RAILS</button>
-                <button type="button" style={buttons} className="bit btn text-light mx-1 my-2">SAS</button>
-                <button type="button" style={buttons} className="bit btn text-light mx-1 my-2">C++</button>
-                <button type="button" style={buttons} className="bit btn text-light mx-1 my-2">GO</button>
-                <button type="button" style={buttons} className="bit btn text-light mx-1 my-2">SQL</button>
-                <button type="button" style={buttons} className="bit btn text-light mx-1 my-2">PYTHON</button>
-                <button type="button" style={buttons} className="bit btn text-light mx-1 my-2">PHP</button>
-                <button type="button" style={buttons} className="bit btn text-light mx-1 my-2">RUST</button>
-                <button type="button" style={buttons} className="bit btn text-light mx-1 my-2">SHELL</button>
-                <button type="button" style={buttons} className="bit btn text-light mx-1 my-2">SCALA</button>
-                <button type="button" style={buttons} className="bit btn text-light mx-1 my-2">MATLAB</button>
-                <button type="button" style={buttons} className="bit btn text-light mx-1 my-2">SWIFT</button>
-                <button type="button" style={buttons} className="bit btn text-light mx-1 my-2">PERL</button>
+                <a href='https://www.w3schools.com/c/index.php'><button type="button" style={buttons} className="bit btn text-light mx-1 my-2">C</button></a>
+
+                <a href='https://www.w3schools.com/js/default.asp'><button type="button" style={buttons} className="bit btn text-light mx-1 my-2">JAVASCRIPT</button></a>
+                
+                <a href='https://www.w3schools.com/cs/index.php'><button type="button" style={buttons} className="bit btn text-light mx-1 my-2">C#</button></a>
+                
+                <a href='https://www.w3schools.com/java/default.asp'><button type="button" style={buttons} className="bit btn text-light mx-1 my-2">JAVA</button></a>
+                
+                <a href='https://www.w3schools.com/typescript/index.php'><button type="button" style={buttons} className="bit btn text-light mx-1 my-2">TYPESCRIPT</button></a>
+                
+                <a href='https://www.w3schools.com/html/default.asp'><button type="button" style={buttons} className="bit btn text-light mx-1 my-2">HTML</button></a>
+                
+                <a href='https://www.w3schools.com/kotlin/index.php'><button type="button" style={buttons} className="bit btn text-light mx-1 my-2">KOTLIN</button></a>
+                
+                <a href='https://www.w3schools.com/django/index.php'><button type="button" style={buttons} className="bit btn text-light mx-1 my-2">DJANGO</button></a>
+                
+                <a href='https://www.w3schools.com/sass/default.asp'><button type="button" style={buttons} className="bit btn text-light mx-1 my-2">SASS</button></a>
+                
+                <a href='https://www.w3schools.com/cpp/default.asp'><button type="button" style={buttons} className="bit btn text-light mx-1 my-2">C++</button></a>
+                
+                <a href='https://www.w3schools.com/go/index.php'><button type="button" style={buttons} className="bit btn text-light mx-1 my-2">GO</button></a>
+                
+                <a href='https://www.w3schools.com/sql/default.asp'><button type="button" style={buttons} className="bit btn text-light mx-1 my-2">SQL</button></a>
+                
+                <a href='https://www.w3schools.com/python/default.asp'><button type="button" style={buttons} className="bit btn text-light mx-1 my-2">PYTHON</button></a>
+                
+                <a href='https://www.w3schools.com/php/default.asp'><button type="button" style={buttons} className="bit btn text-light mx-1 my-2">PHP</button></a>
+                
+                <a href='https://www.w3schools.com/php/default.asp'><button type="button" style={buttons} className="bit btn text-light mx-1 my-2">JQUERY</button></a>
+                
+                <a href='https://www.w3schools.com/python/pandas/default.asp'><button type="button" style={buttons} className="bit btn text-light mx-1 my-2">PANDAS</button></a>
+                
+                <a href='https://www.w3schools.com/xml/default.asp'><button type="button" style={buttons} className="bit btn text-light mx-1 my-2">XML</button></a>
+                
+                <a href='https://www.w3schools.com/aws/index.php'><button type="button" style={buttons} className="bit btn text-light mx-1 my-2">AWS</button></a>
+                
+                <a href='https://www.w3schools.com/vue/index.php'><button type="button" style={buttons} className="bit btn text-light mx-1 my-2">VUE</button></a>
+                
+                <a href='https://www.w3schools.com/asp/default.asp'><button type="button" style={buttons} className="bit btn text-light mx-1 my-2">ASP</button></a>
+            
             </div >
 
         </>
