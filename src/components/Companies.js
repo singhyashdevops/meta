@@ -3,8 +3,8 @@ import React from 'react'
 export default function Companies(props) {
 
     let title = { textAlign: "center", color: "white", fontSize: "5em" }
-    let headStyle = { fontSize: "2em", textAlign: "center", color: props.mode === "light" ? "black" : "#0070ff", padding: "0.5em 0em", fontFamily: 'oswald' }
-    let paraStyle = { textAlign: "justify", fontSize: "1em", color: props.mode === "light" ? "black" : "white", padding: "0.5em 0em", fontFamily: 'oswald' }
+    let headStyle = { fontSize: "1.2em", textAlign: "center", color: props.mode === "light" ? "black" : "#0070ff", padding: "0.5em 0em", fontFamily: 'oswald' , backgroundColor:"295ab76b", border:"1px solid white", borderRadius:"0.4em"}
+    let paraStyle = { textAlign: "justify", fontSize: "0.8em", color: props.mode === "light" ? "black" : "white", padding: "0.5em 0em", fontFamily: 'oswald' }
     let imageMap = { borderRadius: "10em" }
     let cardStyle = { textAlign: "center", fontSize: "1.2em", color: props.mode === "light" ? "black" : "white", padding: "0.5em 0em", fontFamily: 'oswald' }
 
@@ -24,7 +24,7 @@ export default function Companies(props) {
                 </div >
             </div >
 
-            <div className='container' data-bs-theme={`${props.mode}`} style={{ fontSize: "1.05em" }}>
+            <div className='container my-5' data-bs-theme={`${props.mode}`} style={{ fontSize: "1.05em" }}>
                 <p style={headStyle}>STAT-UPS THAT CREATED THE BUZZ !!</p>
                 <p style={paraStyle}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nesciunt asperiores dicta quibusdam culpa doloribus labore quae beatae est harum maiores aliquid dolor quia magni iure quidem, aliquam dolorum nostrum hic consectetur. Nihil commodi, ab similique unde molestias porro debitis tempore, soluta magni quos esse ullam tenetur velit! Minima, quod?</p>
                 <div className="inline-flex justify-content-center row row-cols-1 row-cols-md-4">
@@ -173,7 +173,7 @@ export default function Companies(props) {
                     </p>
 
                     <div>
-                        <div className="row row-cols-2 row-cols-md-6">
+                        <div className="row row-cols-4 row-cols-md-6">
                             <div className="col my-5">
                                 <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_a5c1ce2bc6.svg" alt="paytm.svg" style={imageMap} />
                             </div>

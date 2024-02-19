@@ -2,17 +2,17 @@ import React, { useState } from 'react'
 
 export default function TextUtils(props) {
 
-    let btnStyle = { fontSize: "0.8em", width: "6em", height: "4em", margin: "2em 0.6em", backgroundColor: props.mode==="light"?"#3f51b5":"#ffbe30", color: props.mode==="light"?"white":"black"}
+    let btnStyle = { fontSize: "0.8em", width: "6em", height: "4em", margin: "2em 0.6em", backgroundColor: props.mode === "light" ? "#3f51b5" : "#ffbe30", color: props.mode === "light" ? "white" : "black" }
     let image = { backgroundImage: props.mode === "dark" ? "url(textutils-dark.jpg)" : "url(textutils-light.jpg)", height: "20em", backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center", backgroundAttachment: "local" }
     let buttons = { fontSize: "1em", backgroundColor: props.mode === "light" ? "black" : "white", color: props.mode === "light" ? "white" : "black", border: "none", width: "5em", overFlow: "hidden" }
     let style = { textAlign: "center", fontSize: "1em" }
     let title = { textAlign: "center", color: "white", fontSize: "5em" }
     let imagePara = { color: "white", fontSize: "1em", fontFamily: 'oswald' }
-    let headStyle = { fontSize: "2em", textAlign: "center", color: props.mode === "light" ? "black" : "#0070ff", padding: "0.5em 0em", fontFamily: 'oswald' }
-    let paraStyle = { textAlign: "justify", fontSize: "1em", color: props.mode === "light" ? "black" : "white", padding: "0.5em 0em", fontFamily: 'oswald' }
     let factTile = { backgroundColor: props.mode === "light" ? "#00277e" : "#0070ff", overflow: "auto", padding: "2em 2em" }
     let factHead = { fontSize: "1.5em", color: props.mode === "light" ? "white" : "black", padding: "0.5em 0em" }
     let factPara = { fontSize: "1em", color: props.mode === "light" ? "#85c1ff" : "white", fontFamily: 'oswald', padding: "0.5em 0em" }
+    let headStyle = { fontSize: "1.2em", textAlign: "center", color: props.mode === "light" ? "black" : "#0070ff", padding: "0.5em 0em", fontFamily: 'oswald', backgroundColor: "295ab76b", border: "1px solid white", borderRadius: "0.4em" }
+    let paraStyle = { textAlign: "justify", fontSize: "0.8em", color: props.mode === "light" ? "black" : "white", padding: "0.5em 0em", fontFamily: 'oswald' }
 
 
     const [text, newText] = useState("")
@@ -67,7 +67,7 @@ export default function TextUtils(props) {
                 </div >
             </div >
 
-            <div className="container" style={style}>
+            <div className="container my-5" style={style}>
                 <p className="form-label" style={headStyle}>ENTER YOUR TEXT TO ANALYSE</p>
                 <p className="form-label" style={paraStyle}>TextUtils is built primarily to do various operations on regular typed text. You can safely use WordPad or NotePad for text drafting, and saving, but TextUtils offers much more than simple text drafting and formatting. You can even remove whitespaces from your scripted documents, and wear up your earphones to listen to it, instead of straining your eyes!</p>
                 <textarea className="form-control label" value={text} onChange={newTextForm} id="formControl" rows="8" placeholder='Start Typing...'></textarea>
@@ -79,8 +79,8 @@ export default function TextUtils(props) {
                 <button type="button" style={btnStyle} className="btn" onClick={gJokes}>Generate Jokes</button>
             </div >
 
-            <div className="container">
-            <p className="form-label" style={headStyle}>ENTER YOUR TEXT TO ANALYSE</p>
+            <div className="container my-5">
+                <p className="form-label" style={headStyle}>ENTER YOUR TEXT TO ANALYSE</p>
                 <p style={paraStyle}>1. There are {text.length}  characters and {text.split(" ").length} words in the text area</p>
                 <p style={paraStyle}>2. With slow speed you'll be able to read in {text.split(" ").length * 0.08} mins.</p>
                 <p style={paraStyle}>3. With fast speed you'll be able to read in {text.split(" ").length * 0.010} mins.</p>
@@ -89,7 +89,7 @@ export default function TextUtils(props) {
             </div>
 
             <div >
-                <p className="form-label" style={headStyle}>AMAZING FACTS ABOUT WORDS</p>
+                <p className="form-label my-5" style={headStyle}>AMAZING FACTS ABOUT WORDS</p>
                 <div style={factTile}>
                     <p style={factHead} className='container'>1. An infinity sign is called a "lemniscate."</p>
                     <p style={factPara} className='container'>The term refers to a plane curve in which two loops meet at a central point, creating what we might call a sideways figure-eight. As Merriam-Webster explains, it's derived from the Latin word for "with hanging ribbons."</p>
@@ -102,7 +102,7 @@ export default function TextUtils(props) {
                 </div>
 
             </div>
-            <div className="container btn-class" style={style}>
+            <div className="container btn-class my-5" style={style}>
                 <p htmlFor="examplehtmlformControlTextarea1 " className="form-label" style={headStyle}>LANGUAGE OF COMPUTER</p>
                 <p htmlFor="examplehtmlformControlTextarea1 " className="form-label" style={paraStyle}>This is an index to notable programming languages, in current or historical use. Dialects of BASIC, esoteric programming languages, and markup languages are not included. A programming language does not need to be imperative or Turing-complete, but must be executable and so does not include markup languages such as HTML or XML, but does include domain-specific languages such as SQL and its dialects.</p>
                 <a href='https://www.w3schools.com/c/index.php'><button type="button" style={buttons} className="btn mx-1 my-2">C</button></a>
