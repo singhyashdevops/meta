@@ -6,8 +6,8 @@ export default function Contact(props) {
     let imagePara = { color: "white", fontSize: "1em", fontFamily: 'oswald' }
     let image = { backgroundImage: props.mode === "dark" ? "url(contact-dark.png)" : "url(contact-light.png)", height: "20em", backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center", backgroundAttachment: "local" }
     let title = { textAlign: "center", color: "white", fontSize: "5em" }
-    let headStyle = { fontSize: "2em", textAlign: "center", color: props.mode === "light" ? "black" : "#0070ff", padding: "0.5em 0em", fontFamily: 'oswald' }
-    let paraStyle = { textAlign: "justify", fontSize: "1em", color: props.mode === "light" ? "black" : "white", padding: "0.5em 0em", fontFamily: 'oswald' }
+    let headStyle = { fontSize: "1.2em", textAlign: "center", color: props.mode === "light" ? "black" : "#0070ff", padding: "0.5em 0em", fontFamily: 'oswald', backgroundColor: props.mode==="light"?"#15a900ba":"#295ab76b",borderRadius: "0.4em" }
+    let paraStyle = { textAlign: "center", fontSize: "0.8em", color: props.mode === "light" ? "black" : "white", padding: "2em 2em", fontFamily: 'oswald', backgroundColor: props.mode==="light"?"#cbff657d":"#659fff7d", borderRadius: "0.4em"}
 
 
     return (
