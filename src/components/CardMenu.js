@@ -22,7 +22,7 @@ export default function CardMenu(props) {
     let factTile = { backgroundColor: props.mode === "light" ? "#00277e" : "#0070ff", overflow: "auto", padding: "2em 2em" }
     let factHead = { fontSize: "1.50em", color: props.mode === "light" ? "white" : "black", padding: "0.50em 0em" }
     let factPara = { fontSize: "1em", color: props.mode === "light" ? "#85c1ff" : "white", fontFamily: 'oswald', padding: "0.50em 0em" }
-    let headStyle = { fontSize: "1.2em", textAlign: "center", color: props.mode === "light" ? "black" : "#0070ff", padding: "0.5em 0em", fontFamily: 'oswald' , backgroundColor:"295ab76b", border:"1px solid white", borderRadius:"0.4em"}
+    let headStyle = { fontSize: "1.2em", textAlign: "center", color: props.mode === "light" ? "black" : "#0070ff", padding: "0.5em 0em", fontFamily: 'oswald' , backgroundColor:"#295ab76b", border:"1px solid white", borderRadius:"0.4em"}
     let paraStyle = { textAlign: "justify", fontSize: "0.8em", color: props.mode === "light" ? "black" : "white", padding: "0.5em 0em", fontFamily: 'oswald' }
 
 

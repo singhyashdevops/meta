@@ -6,8 +6,8 @@ export default function LogForm(props) {
     let image = { backgroundImage: props.mode === "dark" ? "url(login-dark.jpeg)" : "url(login-light.jpeg)", height: "20em", backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center", backgroundAttachment: "local" }
     let title = { textAlign: "center", color: "white", fontSize: "5em" }
     let imagePara = { color: "white", fontSize: "1em", fontFamily: 'oswald' }
-    let headStyle = { fontSize: "1.2em", textAlign: "center", color: props.mode === "light" ? "black" : "#0070ff", padding: "0.5em 0em", fontFamily: 'oswald' , backgroundColor:"295ab76b", border:"1px solid white", borderRadius:"0.4em"}
-    let paraStyle = { textAlign: "justify", fontSize: "0.8em", color: props.mode === "light" ? "black" : "white", padding: "0.5em 0em", fontFamily: 'oswald' }
+    let headStyle = { fontSize: "1.2em", textAlign: "center", color: props.mode === "light" ? "black" : "#0070ff", padding: "0.5em 0em", fontFamily: 'oswald', backgroundColor: "#295ab76b", border: "1px solid white", borderRadius: "0.4em" }
+    let paraStyle = { textAlign: "center", fontSize: "0.8em", color: props.mode === "light" ? "black" : "white", padding: "2em 2em", fontFamily: 'oswald', backgroundColor: "#659fff7d", border: "1px solid #73b4ff", borderRadius: "0.4em" }
 
     return (
         <>

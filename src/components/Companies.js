@@ -3,8 +3,8 @@ import React from 'react'
 export default function Companies(props) {
 
     let title = { textAlign: "center", color: "white", fontSize: "5em" }
-    let headStyle = { fontSize: "1.2em", textAlign: "center", color: props.mode === "light" ? "black" : "#0070ff", padding: "0.5em 0em", fontFamily: 'oswald' , backgroundColor:"295ab76b", border:"1px solid white", borderRadius:"0.4em"}
-    let paraStyle = { textAlign: "justify", fontSize: "0.8em", color: props.mode === "light" ? "black" : "white", padding: "0.5em 0em", fontFamily: 'oswald' }
+    let headStyle = { fontSize: "1.2em", textAlign: "center", color: props.mode === "light" ? "black" : "#0070ff", padding: "0.5em 0em", fontFamily: 'oswald', backgroundColor: props.mode==="light"?"#15a900ba":"#295ab76b",borderRadius: "0.4em" }
+    let paraStyle = { textAlign: "center", fontSize: "0.8em", color: props.mode === "light" ? "black" : "white", padding: "2em 2em", fontFamily: 'oswald', backgroundColor: props.mode==="light"?"#cbff657d":"#659fff7d", borderRadius: "0.4em"}
     let imageMap = { borderRadius: "10em" }
     let cardStyle = { textAlign: "center", fontSize: "1.2em", color: props.mode === "light" ? "black" : "white", padding: "0.5em 0em", fontFamily: 'oswald' }
 

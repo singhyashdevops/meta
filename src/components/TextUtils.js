@@ -11,8 +11,8 @@ export default function TextUtils(props) {
     let factTile = { backgroundColor: props.mode === "light" ? "#00277e" : "#0070ff", overflow: "auto", padding: "2em 2em" }
     let factHead = { fontSize: "1.5em", color: props.mode === "light" ? "white" : "black", padding: "0.5em 0em" }
     let factPara = { fontSize: "1em", color: props.mode === "light" ? "#85c1ff" : "white", fontFamily: 'oswald', padding: "0.5em 0em" }
-    let headStyle = { fontSize: "1.2em", textAlign: "center", color: props.mode === "light" ? "black" : "#0070ff", padding: "0.5em 0em", fontFamily: 'oswald', backgroundColor: "295ab76b", border: "1px solid white", borderRadius: "0.4em" }
-    let paraStyle = { textAlign: "justify", fontSize: "0.8em", color: props.mode === "light" ? "black" : "white", padding: "0.5em 0em", fontFamily: 'oswald' }
+    let headStyle = { fontSize: "1.2em", textAlign: "center", color: props.mode === "light" ? "black" : "#0070ff", padding: "0.5em 0em", fontFamily: 'oswald', backgroundColor: props.mode==="light"?"#15a900ba":"#295ab76b",borderRadius: "0.4em" }
+    let paraStyle = { textAlign: "center", fontSize: "0.8em", color: props.mode === "light" ? "black" : "white", padding: "2em 2em", fontFamily: 'oswald', backgroundColor: props.mode==="light"?"#cbff657d":"#659fff7d", borderRadius: "0.4em"}
 
 
     const [text, newText] = useState("")
@@ -68,7 +68,7 @@ export default function TextUtils(props) {
             </div >
 
             <div className="container my-5" style={style}>
-                <p className="form-label" style={headStyle}>ENTER YOUR TEXT TO ANALYSE</p>
+                <p className="form-label" style={headStyle}>I. ENTER YOUR TEXT TO ANALYSE</p>
                 <p className="form-label" style={paraStyle}>TextUtils is built primarily to do various operations on regular typed text. You can safely use WordPad or NotePad for text drafting, and saving, but TextUtils offers much more than simple text drafting and formatting. You can even remove whitespaces from your scripted documents, and wear up your earphones to listen to it, instead of straining your eyes!</p>
                 <textarea className="form-control label" value={text} onChange={newTextForm} id="formControl" rows="8" placeholder='Start Typing...'></textarea>
                 <button type="button" style={btnStyle} className="btn" onClick={cText}>Copy Text</button>
@@ -80,7 +80,7 @@ export default function TextUtils(props) {
             </div >
 
             <div className="container my-5">
-                <p className="form-label" style={headStyle}>ENTER YOUR TEXT TO ANALYSE</p>
+                <p className="form-label" style={headStyle}>III. TEXT CALCULATOR</p>
                 <p style={paraStyle}>1. There are {text.length}  characters and {text.split(" ").length} words in the text area</p>
                 <p style={paraStyle}>2. With slow speed you'll be able to read in {text.split(" ").length * 0.08} mins.</p>
                 <p style={paraStyle}>3. With fast speed you'll be able to read in {text.split(" ").length * 0.010} mins.</p>
@@ -89,21 +89,23 @@ export default function TextUtils(props) {
             </div>
 
             <div >
-                <p className="form-label my-5" style={headStyle}>AMAZING FACTS ABOUT WORDS</p>
-                <div style={factTile}>
-                    <p style={factHead} className='container'>1. An infinity sign is called a "lemniscate."</p>
-                    <p style={factPara} className='container'>The term refers to a plane curve in which two loops meet at a central point, creating what we might call a sideways figure-eight. As Merriam-Webster explains, it's derived from the Latin word for "with hanging ribbons."</p>
-                    <p style={factHead} className='container'>2. The longest English word is nearly 190,000 letters.</p>
-                    <p style={factPara} className='container'>That would be the chemical name of Titin, the largest known protein. It begins, "Methionyl​threonyl​threonyl​glutaminyl​alanyl​prolyl​threonyl​phenyl​alanyl​threonyl​glutaminyl​prolyl​leucyl​glutaminyl​seryl​valyl​valyl​valyl​leucyl​glutamyl​glycyl​seryl​threonyl​alanyl​threonyl​phenyl​alanyl​glutamyl​alanyl​histidyl​isoleucyl​seryl​glycyl​phenyl​alanyl​prolyl​valyl​prolyl​glutamyl​valyl​seryl​tryptophyl​phenyl​alanyl​arginyl​aspartyl​glycyl​glutaminyl​valyl​isoleucyl​seryl​threonyl​seryl​threonyl​leucyl​pro" and goes on for tens of thousands of letters.</p>
-                    <p style={factHead} className='container'>3. The longest word found in a major dictionary is 45 letters long.</p>
-                    <p style={factPara} className='container'>The word, pneumonoultramicroscopicsilicovolcanoconiosis, technically refers to a type of lung disease caused by silica dust. But according to Lexico, it was actually coined in the 1930s by Everett M. Smith, the president of the National Puzzlers League, for the express purpose of becoming the longest word in the English language, so it's a bit of a cheat.</p>
-                    <p style={factHead} className='container'>4. The word "bankrupt" comes from the Italian term for "broken bench."</p>
-                    <p style={factPara} className='container'>According to the Online Etymology Dictionary, the word "bankrupt" grew out of an Italian phrase that literally refers to breaking something—not just the bank. That Italian phrase is banca rotta, meaning "broken bench," and it refers to an old custom that involved literally breaking the bench of money dealers who ran out of funds.</p>
+                <div className='container'>
+                    <p className="form-label my-5" style={headStyle}>IV. AMAZING FACTS ABOUT WORDS</p>
+                    <div style={factTile}>
+                        <p style={factHead} className='container'>1. An infinity sign is called a "lemniscate."</p>
+                        <p style={factPara} className='container'>The term refers to a plane curve in which two loops meet at a central point, creating what we might call a sideways figure-eight. As Merriam-Webster explains, it's derived from the Latin word for "with hanging ribbons."</p>
+                        <p style={factHead} className='container'>2. The longest English word is nearly 190,000 letters.</p>
+                        <p style={factPara} className='container'>That would be the chemical name of Titin, the largest known protein. It begins, "Methionyl​threonyl​threonyl​glutaminyl​alanyl​prolyl​threonyl​phenyl​alanyl​threonyl​glutaminyl​prolyl​leucyl​glutaminyl​seryl​valyl​valyl​valyl​leucyl​glutamyl​glycyl​seryl​threonyl​alanyl​threonyl​phenyl​alanyl​glutamyl​alanyl​histidyl​isoleucyl​seryl​glycyl​phenyl​alanyl​prolyl​valyl​prolyl​glutamyl​valyl​seryl​tryptophyl​phenyl​alanyl​arginyl​aspartyl​glycyl​glutaminyl​valyl​isoleucyl​seryl​threonyl​seryl​threonyl​leucyl​pro" and goes on for tens of thousands of letters.</p>
+                        <p style={factHead} className='container'>3. The longest word found in a major dictionary is 45 letters long.</p>
+                        <p style={factPara} className='container'>The word, pneumonoultramicroscopicsilicovolcanoconiosis, technically refers to a type of lung disease caused by silica dust. But according to Lexico, it was actually coined in the 1930s by Everett M. Smith, the president of the National Puzzlers League, for the express purpose of becoming the longest word in the English language, so it's a bit of a cheat.</p>
+                        <p style={factHead} className='container'>4. The word "bankrupt" comes from the Italian term for "broken bench."</p>
+                        <p style={factPara} className='container'>According to the Online Etymology Dictionary, the word "bankrupt" grew out of an Italian phrase that literally refers to breaking something—not just the bank. That Italian phrase is banca rotta, meaning "broken bench," and it refers to an old custom that involved literally breaking the bench of money dealers who ran out of funds.</p>
+                    </div>
                 </div>
 
             </div>
             <div className="container btn-class my-5" style={style}>
-                <p htmlFor="examplehtmlformControlTextarea1 " className="form-label" style={headStyle}>LANGUAGE OF COMPUTER</p>
+                <p htmlFor="examplehtmlformControlTextarea1 " className="form-label" style={headStyle}>V. LANGUAGE OF COMPUTER</p>
                 <p htmlFor="examplehtmlformControlTextarea1 " className="form-label" style={paraStyle}>This is an index to notable programming languages, in current or historical use. Dialects of BASIC, esoteric programming languages, and markup languages are not included. A programming language does not need to be imperative or Turing-complete, but must be executable and so does not include markup languages such as HTML or XML, but does include domain-specific languages such as SQL and its dialects.</p>
                 <a href='https://www.w3schools.com/c/index.php'><button type="button" style={buttons} className="btn mx-1 my-2">C</button></a>
                 <a href='https://www.w3schools.com/js/default.asp'><button type="button" style={buttons} className="btn mx-1 my-2">JAVASCRIPT</button></a>
