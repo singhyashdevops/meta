@@ -2,34 +2,29 @@ import React from 'react'
 
 export default function Contact(props) {
 
-    let headStyle = { textAlign: "center", fontSize: "35px", letterSpacing: "2px", color: props.mode === "light" ? "black" : "#0070ff" }
-
-    let paraStyle = { textAlign: "justify", fontSize: "20px", letterSpacing: "2px", textAlignLast: "center", color: props.mode === "light" ? "#ff0000" : "white", margin: "10px" }
-
-    let formStyle = { textAlign: "justify", fontSize: "20px", letterSpacing: "2px", textAlignLast: "center", color: props.mode === "light" ? "#ff0000" : "white" }
-
-    let carousel = { letterSpacing: "2px" }
-
-    let title = { textAlign: "center", letterSpacing: "2px", color: "white", fontSize: "40px" }
-
-    let $imageStyle = { textAlign: "justify", textAlignLast: "center", letterSpacing: "2px", color: "white", fontSize: "20px" }
+    let formStyle = { textAlign: "justify", fontSize: "0.99em", textAlignLast: "center", color: props.mode === "light" ? "#ff0000" : "white" }
+    let imagePara = { color: "white", fontSize: "1em", fontFamily: 'oswald' }
+    let image = { backgroundImage: props.mode === "dark" ? "url(contact-dark.png)" : "url(contact-light.png)", height: "20em", backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center", backgroundAttachment: "local" }
+    let title = { textAlign: "center", color: "white", fontSize: "5em" }
+    let headStyle = { fontSize: "2em", textAlign: "center", color: props.mode === "light" ? "black" : "#0070ff", padding: "0.5em 0em", fontFamily: 'oswald' }
+    let paraStyle = { textAlign: "justify", fontSize: "1em", color: props.mode === "light" ? "black" : "white", padding: "0.5em 0em", fontFamily: 'oswald' }
 
 
     return (
         <>
             <div>
 
-                <div id="carouselExampleCaptions" className="carousel slide" style={carousel}>
+                <div id="carouselExampleCaptions" className="carousel slide" >
 
                     <div className="carousel-inner">
 
-                        <div className="carousel-item active" id='picture1' style={{ backgroundImage: props.mode === "dark" ? "url(contact-dark.png)" : "url(contact-light.png)", height: "400px", backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center", backgroundAttachment: "local" }}>
+                        <div className="carousel-item active" id='picture1' style={image}>
 
                             <div className="carousel-caption d-md-block">
 
                                 <h5 className='headerCaption container' style={title}>Contact Us</h5>
 
-                                <p className='caption container' style={$imageStyle}>Get in touch with {props.title}</p>
+                                <p className='caption container' style={imagePara}>"Get in touch with {props.title}"</p>
 
                             </div>
 
@@ -39,9 +34,9 @@ export default function Contact(props) {
 
                 </div >
 
-                <div className='container my-5'>
-                    <p style={headStyle} className='my-5'>CONTACT FORUM</p>
-                    <p style={paraStyle} className='my-5'>Enter your basic details and your valid credentials, feel free to contact us in case you need some guidances.</p>
+                <div className='container'>
+                    <p style={headStyle}>CONTACT FORUM</p>
+                    <p style={paraStyle}>Enter your basic details and your valid credentials, feel free to contact us in case you need some guidances.</p>
                     <label for="basic-url" className="form-label" style={formStyle}>Full Name</label>
                     <div className="input-group mb-4">
                         <input type="text" className="form-control" aria-label="Username" aria-describedby="basic-addon1" style={{ borderRadius: "8px" }} />
@@ -142,7 +137,7 @@ export default function Contact(props) {
                                 </label>
                             </div>
                         </div>
-                        <div className="mb-3 my-5">
+                        <div className="mb-3">
                             <button className="btn btn-success mx-1" type="submit">Submit form</button>
                             <button className="btn btn-primary mx-1" type="submit">Submit form</button>
                         </div>

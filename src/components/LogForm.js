@@ -1,35 +1,30 @@
 import React from 'react'
 
 export default function LogForm(props) {
-    let headStyle = { textAlign: "center", fontSize: "35px", letterSpacing: "2px", color: props.mode === "light" ? "black" : "#0070ff" }
 
-    let paraStyle = { textAlign: "justify", fontSize: "20px", letterSpacing: "2px", textAlignLast: "center", color: props.mode === "light" ? "#ff0000" : "white", margin: "40px" }
-
-    let formStyle = { textAlign: "justify", fontSize: "15px", letterSpacing: "2px", textAlignLast: "center", color: props.mode === "light" ? "#ff0000" : "white" }
-
-    let carousel = { letterSpacing: "2px" }
-
-    let title = { textAlign: "center", letterSpacing: "2px", color: "white", fontSize: "40px" }
-
-    let $imageStyle = { textAlign: "justify", textAlignLast: "center", letterSpacing: "2px", color: "white", fontSize: "20px" }
-
+    let formStyle = { textAlign: "justify", fontSize: "0.99em", textAlignLast: "center", color: props.mode === "light" ? "#ff0000" : "white" }
+    let image = { backgroundImage: props.mode === "dark" ? "url(login-dark.jpeg)" : "url(login-light.jpeg)", height: "20em", backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center", backgroundAttachment: "local" }
+    let title = { textAlign: "center", color: "white", fontSize: "5em" }
+    let imagePara = { color: "white", fontSize: "1em", fontFamily: 'oswald' }
+    let headStyle = { fontSize: "2em", textAlign: "center", color: props.mode === "light" ? "black" : "#0070ff", padding: "0.5em 0em", fontFamily: 'oswald' }
+    let paraStyle = { textAlign: "justify", fontSize: "1em", color: props.mode === "light" ? "black" : "white", padding: "0.5em 0em", fontFamily: 'oswald' }
 
     return (
         <>
 
             <div>
 
-                <div id="carouselExampleCaptions" className="carousel slide" style={carousel}>
+                <div id="carouselExampleCaptions" className="carousel slide" >
 
                     <div className="carousel-inner">
 
-                        <div className="carousel-item active" id='picture1' style={{ backgroundImage: props.mode === "dark" ? "url(login-dark.jpeg)" : "url(login-light.jpeg)", height: "400px", backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center", backgroundAttachment: "local" }}>
+                        <div className="carousel-item active" id='picture1' style={image}>
 
                             <div className="carousel-caption d-md-block">
 
                                 <h5 className='headerCaption container' style={title}>LOGIN FORM</h5>
 
-                                <p className='caption container' style={$imageStyle}>Register yourself at {props.title}</p>
+                                <p className='caption container'style={imagePara}>"Register yourself at {props.title}"</p>
                                 
                             </div>
 
@@ -39,9 +34,9 @@ export default function LogForm(props) {
 
                 </div >
 
-                <div className='container my-5'>
+                <div className='container'>
                     <p style={headStyle}>LOGIN/SIGNUP</p>
-                    <p style={paraStyle} className='my-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nesciunt asperiores dicta quibusdam culpa doloribus labore quae beatae est harum maiores aliquid dolor quia magni iure quidem, aliquam dolorum nostrum hic consectetur. Nihil commodi, ab similique unde molestias porro debitis tempore, soluta magni quos esse ullam tenetur velit! Minima, quod?</p>
+                    <p style={paraStyle}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nesciunt asperiores dicta quibusdam culpa doloribus labore quae beatae est harum maiores aliquid dolor quia magni iure quidem, aliquam dolorum nostrum hic consectetur. Nihil commodi, ab similique unde molestias porro debitis tempore, soluta magni quos esse ullam tenetur velit! Minima, quod?</p>
 
                     <form className="row g-3">
                         <div className="col-md-6">

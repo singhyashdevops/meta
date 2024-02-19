@@ -28,18 +28,18 @@ export default function App() {
     }
   }
 
-  let title = "Meta-Verse"
+  let title = "Metaverse.code"
 
   return (
     <div style={{ backgroundColor: mode === "light" ? "white" : "black" }} >
-      <MovingText mode={mode} />
+      {/* <MovingText mode={mode} /> */}
       <Navbar title={title} mode={mode} text={text} toggleMode={toggleMode} />
       <Routes>
         <Route index element={<TextUtils mode={mode} title={title} />} />
         <Route path='/textUtils' element={<TextUtils mode={mode} title={title} />} />
         <Route path='/companies' element={<Companies mode={mode} title={title} />} />
         <Route path='/cardmenu' element={<CardMenu mode={mode} title={title} />} />
-        <Route path='/contact' element={<Contact mode={mode} title={title} />} />
+        {/* <Route path='/contact' element={<Contact mode={mode} title={title} />} /> */}
         <Route path='/logform' element={<LogForm mode={mode} title={title} />} />
       </Routes>
       <Tags title={title} mode={mode}  />

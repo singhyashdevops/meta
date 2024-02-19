@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Footer(props) {
 
-    let headStyle = { textAlign: "center", fontSize: "50px", fontWeight: "bolder", letterSpacing: "2px", color: props.mode === "light" ? "#740000" : "#76b1ff" }
+    let headStyle = { textAlign: "center", fontSize: "50px", fontWeight: "bolder", color: props.mode === "light" ? "#a85656" : "#76b1ff" }
 
     let linkStyle = { color: props.mode === "light" ? "black" : "white", fontSize: "18px", textDecoration:"none"}
 
@@ -10,14 +10,14 @@ export default function Footer(props) {
 
     return (
         <div>
-            <div className="bd-footer py-4 py-md-4 mt-1" style={{ backgroundColor: props.mode === "light" ? "#ffa1a1" : "black"}}>
+            <div className="bd-footer py-4 py-md-4 mt-1" style={{ backgroundColor: props.mode === "light" ? "white" : "black"}}>
                 <div className="container py-4 py-md-5 px-md-3">
                     <div className="row">
                         <div className="col-lg-3 mb-5 my-3">
                             <a className="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none" href="/" aria-label="Bootstrap">
-                                <span style={headStyle}>{props.title}</span>
+                                <span className='footerHead' style={headStyle}>{props.title}</span>
                             </a>
-                            <p className="mb-2" style={linkStyle}>Designed and built with all the love in the world by the Bootstrap team with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors" style={linkStyle2}>our contributors.</a> Code licensed <a href="https://github.com/twbs/bootstrap/blob/main/LICENSE" target="_blank" rel="license noopener" style={linkStyle2}>MIT</a>, docs <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener" style={linkStyle2}>CC BY 3.0</a>.</p>
+                            <p className="mb-2" style={linkStyle}>Designed and built with all the love in the world by the Bootstrap team with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors" style={linkStyle2}>our contributors.</a> Code licensed <a href="https://github.com/twbs/bootstrap/blob/main/LICENSE" target="_blank" rel="license noopener noreferrer" style={linkStyle2}>MIT</a>, docs <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener noreferrer" style={linkStyle2}>CC BY 3.0</a>.</p>
                             <div>
                                 <a href="https://www.instagram.com">
                                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 48 48" style={{ height: "30px" }}>
