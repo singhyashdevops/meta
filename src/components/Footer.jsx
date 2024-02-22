@@ -1,23 +1,26 @@
 import React from 'react'
+import "./Footer.css"
 
 export default function Footer(props) {
 
-    let headStyle = { textAlign: "center", fontSize: "50px", fontWeight: "bolder", color: props.mode === "light" ? "#a85656" : "#76b1ff" }
+    let headStyle = { textAlign: "center", fontSize: "50px", fontWeight: "bolder"}
 
     let linkStyle = { color: props.mode === "light" ? "black" : "white", fontSize: "18px", textDecoration:"none"}
 
-    let linkStyle2 = { fontSize: "25px", color: props.mode === "light" ? "#ff0000" : "#0070ff", textDecoration:"none" }
+    let linkStyle2 = {    fontSize: "25px", color: props.mode === "light" ? "#ff0000" : "#0070ff",textDecoration:"none"
+}
 
     return (
         <div>
-            <div className="bd-footer py-4 py-md-4 mt-1" style={{ backgroundColor: props.mode === "light" ? "white" : "black"}}>
+            {/* style={{ backgroundColor: props.mode === "light" ? "white" : "black"}} */}
+            <div className="bd-footer py-4 py-md-4 mt-1">
                 <div className="container py-4 py-md-5 px-md-3">
                     <div className="row">
                         <div className="col-lg-3 mb-5 my-3">
                             <a className="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none" href="/" aria-label="Bootstrap">
                                 <span className='footerHead' style={headStyle}>{props.title}</span>
                             </a>
-                            <p className="mb-2" style={linkStyle}>Designed and built with all the love in the world by the Bootstrap team with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors" style={linkStyle2}>our contributors.</a> Code licensed <a href="https://github.com/twbs/bootstrap/blob/main/LICENSE" target="_blank" rel="license noopener noreferrer" style={linkStyle2}>MIT</a>, docs <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener noreferrer" style={linkStyle2}>CC BY 3.0</a>.</p>
+                            <p className="footer-description">Designed and built with web technolies including <span href="" className='footer-light'>Javascript</span> and <span className='footer-light'>React.</span> Poudly made by<span href="" className='footer-light'> Yash Singh.</span> Code Repository is available at <span href="" className='footer-light'>Github </span>(@singhyashdev).</p>
                             <div>
                                 <a href="https://www.instagram.com">
                                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 48 48" style={{ height: "30px" }}>
@@ -70,47 +73,47 @@ export default function Footer(props) {
                             </div>
                         </div>
                         <div className="col-5 col-lg-2 offset-lg-1 mb-5 links">
-                            <p style={linkStyle2}>Languages</p>
+                            <p className="footer-light">Languages</p>
                             <ul className="list-unstyled">
-                                <li className="mb-2"><a href="https://www.java.com/" style={linkStyle}>JAVA</a></li>
-                                <li className="mb-2"><a href="https://www.python.org/" style={linkStyle}>PYTHON</a></li>
-                                <li className="mb-2"><a href="https://www.javascript.info/" style={linkStyle}>JAVASCRIPT</a></li>
-                                <li className="mb-2"><a href="https://www.react.dev/" style={linkStyle}>REACT.JS</a></li>
-                                <li className="mb-2"><a href="https://www.expressjs.com/" style={linkStyle}>EXPRESS.JS</a></li>
-                                <li className="mb-2"><a href="https://www.angularjs.org/" style={linkStyle}>ANGULAR.JS</a></li>
-                                <li className="mb-2"><a href="https://www.rubyonrails.org/" style={linkStyle}>RUBY ON RAILS</a></li>
+                                <li className="mb-2 footer-link-c1"><a href="https://www.java.com/">JAVA</a></li>
+                                <li className="mb-2 footer-link-c1"><a href="https://www.python.org/">PYTHON</a></li>
+                                <li className="mb-2 footer-link-c1"><a href="https://www.javascript.info/">JAVASCRIPT</a></li>
+                                <li className="mb-2 footer-link-c1"><a href="https://www.react.dev/">REACT.JS</a></li>
+                                <li className="mb-2 footer-link-c1"><a href="https://www.expressjs.com/">EXPRESS.JS</a></li>
+                                <li className="mb-2 footer-link-c1"><a href="https://www.angularjs.org/">ANGULAR.JS</a></li>
+                                <li className="mb-2 footer-link-c1"><a href="https://www.rubyonrails.org/">RUBY ON RAILS</a></li>
                             </ul>
                         </div>
                         <div className="col-6 col-lg-2 mb-1">
-                            <p style={linkStyle2}>REFERENCES</p>
+                            <p className="footer-light">REFERENCES</p>
                             <ul className="list-unstyled">
-                                <li className="mb-2"><a href="https://www.frontendpractice.com/" style={linkStyle}>FRONTEND PRACTICE</a></li>
-                                <li className="mb-2"><a href="https://developer.mozilla.org/" style={linkStyle}>DEVELOPER MOZILLA</a></li>
-                                <li className="mb-2"><a href="https://www.w3school.com/" style={linkStyle}>W3SCHOOLS</a></li>
-                                <li className="mb-2"><a href="https://www.freecodecamp.com/" style={linkStyle}>FREE CODE CAMP</a></li>
-                                <li className="mb-2"><a href="https://www.coursera.org/" style={linkStyle}>COURSERA</a></li>
-                                <li className="mb-2"><a href="https://www.frontendmasters.com/" style={linkStyle}>FRONTEND MASTERS</a></li>
-                                <li className="mb-2"><a href="https://www.sitecrafting.com/" style={linkStyle}>SITE CRAFTING</a></li>
-                                <li className="mb-2"><a href="https://www.knowledgehut.com/" style={linkStyle}>KNOWLEDGEHUT</a></li>
+                                <li className="mb-2 footer-link-c2"><a href="https://www.frontendpractice.com/">FRONTEND PRACTICE</a></li>
+                                <li className="mb-2 footer-link-c2"><a href="https://developer.mozilla.org/">DEVELOPER MOZILLA</a></li>
+                                <li className="mb-2 footer-link-c2"><a href="https://www.w3school.com/" >W3SCHOOLS</a></li>
+                                <li className="mb-2 footer-link-c2"><a href="https://www.freecodecamp.com/" >FREE CODE CAMP</a></li>
+                                <li className="mb-2 footer-link-c2"><a href="https://www.coursera.org/" >COURSERA</a></li>
+                                <li className="mb-2 footer-link-c2"><a href="https://www.frontendmasters.com/" >FRONTEND MASTERS</a></li>
+                                <li className="mb-2 footer-link-c2"><a href="https://www.sitecrafting.com/" >SITE CRAFTING</a></li>
+                                <li className="mb-2 footer-link-c2"><a href="https://www.knowledgehut.com/">KNOWLEDGEHUT</a></li>
                             </ul>
                         </div>
                         <div className="col-5 col-lg-2 mb-1">
-                            <p style={linkStyle2}>Projects</p>
+                            <p className="footer-light">Projects</p>
                             <ul className="list-unstyled">
-                                <li className="mb-2"><a href="https://www.youtube.com/watch?v=nGhKIC_7Mkk" style={linkStyle}>AMAZON CLONE</a></li>
-                                <li className="mb-2"><a href="https://www.youtube.com/watch?v=TXCj39dGLlY" style={linkStyle}>CALCULATOR</a></li>
-                                <li className="mb-2"><a href="https://www.youtube.com/watch?v=4ul3q-cEhvU" style={linkStyle}>ANALOG CLOCK</a></li>
-                                <li className="mb-2"><a href="https://www.youtube.com/watch?v=Tgat3-prVv4" style={linkStyle}>NETFLIX CLONE</a></li>
+                                <li className="mb-2 footer-link-c3"><a href="https://www.youtube.com/watch?v=nGhKIC_7Mkk">AMAZON CLONE</a></li>
+                                <li className="mb-2 footer-link-c3"><a href="https://www.youtube.com/watch?v=TXCj39dGLlY">CALCULATOR</a></li>
+                                <li className="mb-2 footer-link-c3"><a href="https://www.youtube.com/watch?v=4ul3q-cEhvU">ANALOG CLOCK</a></li>
+                                <li className="mb-2 footer-link-c3"><a href="https://www.youtube.com/watch?v=Tgat3-prVv4">NETFLIX CLONE</a></li>
                             </ul>
                         </div>
                         <div className="col-5 col-lg-2 mb-1">
-                            <p style={linkStyle2}>Community</p>
+                            <p className="footer-light">Community</p>
                             <ul className="list-unstyled">
-                                <li className="mb-2"><a href="https://www.youtube.com/@ApnaCollegeOfficial" style={linkStyle}>APNA COLLEGE</a></li>
-                                <li className="mb-2"><a href="https://www.youtube.com/@CodeWithHarry" style={linkStyle}>CODING WITH HARRY</a></li>
-                                <li className="mb-2"><a href="https://www.youtube.com/@TechGun" style={linkStyle}>TECH GUN</a></li>
-                                <li className="mb-2"><a href="https://www.youtube.com/@chaiaurcode" style={linkStyle}>CHAI AUR CODE</a></li>
-                                <li className="mb-2"><a href="https://www.youtube.com/@thesheryianscodingschool" style={linkStyle}>SHERIAN CODING SCHOOL</a></li>
+                                <li className="mb-2 footer-link-c4 "><a href="https://www.youtube.com/@ApnaCollegeOfficial">APNA COLLEGE</a></li>
+                                <li className="mb-2 footer-link-c4 "><a href="https://www.youtube.com/@CodeWithHarry">CODING WITH HARRY</a></li>
+                                <li className="mb-2 footer-link-c4 "><a href="https://www.youtube.com/@TechGun">TECH GUN</a></li>
+                                <li className="mb-2 footer-link-c4 "><a href="https://www.youtube.com/@chaiaurcode">CHAI AUR CODE</a></li>
+                                <li className="mb-2 footer-link-c4 "><a href="https://www.youtube.com/@thesheryianscodingschool">SHERIAN CODING SCHOOL</a></li>
                             </ul>
                         </div>
                         {/* <ul className="about" style={{ display: "flex", listStyle: "none", justifyContent: "space-between", flexWrap: "wrap", gap: "2px", fontSize: "25px"}}>

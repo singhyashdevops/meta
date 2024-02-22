@@ -1,0 +1,69 @@
+.navbar-brand {
+    font-size: 1.5em;
+    font-family: "oswald";
+    font-weight: "900";
+}
+
+.nav-Label,
+.nav-item {
+    font-size: 1em;
+    font-family: "oswald";
+    font-weight: 500;
+    transition: ease-in;
+    transition-duration: 200ms;
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    align-items: center;
+    outline: none
+}
+
+.switchBox {
+    font-size: 1em;
+    font-family: "oswald";
+    font-weight: 100;
+    transition: ease-in;
+    transition-duration: 200ms;
+    display: flex;
+    flex-direction: row;
+    /* background-color: brown; */
+    align-items: center;
+    outline: none
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+        margin-top: 3px;
+    }
+}
+
+.nav-item:hover {
+    /* text-decoration: 2px solid white underline; */
+    color: rgb(0, 255, 72);
+    transition: ease-in;
+    transition-duration: 100ms;
+}
+
+.form-switch .form-check-input:checked {
+    background-position: right center;
+    border: none;
+    height: 1.1em;
+    width: 2.2em;
+}
+
+.form-switch .form-check-input {
+    background-position: left center;
+    border-radius: 2em;
+    transition: background-position .15s ease-in-out;
+}

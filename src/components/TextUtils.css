@@ -1,0 +1,116 @@
+.headerCaption {
+    color: white;
+    font-size: 5em;
+    text-decoration: overline;
+}
+
+.textCaption {
+    text-decoration: overline;
+    color: #ff5757;
+}
+
+.carousel-item {
+    height: 30em;
+    background-image: url(/public/5675706.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.caption {
+    color: white;
+    font-size: 1em;
+    font-family: oswald;
+    border-radius: 0.4em;
+    padding: 2%;
+    background-image: linear-gradient(rgb(113, 113, 113), rgba(0, 0, 0, 0));
+}
+
+.form-label {
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    padding: 0.5em 0.3em;
+    font-family: oswald;
+    background-image: linear-gradient(45deg, rgb(119, 0, 0), rgb(210,0,52,0%));
+    border-radius: 0.2em;
+    /* margin: 2em 0em; */
+}
+
+.form-para, .forms-text {
+    font-size: 0.8em;
+    color: #ffffff;
+    padding: 1em 0em;
+    font-family: oswald
+}
+
+.title{
+    font-size: 2em;
+    color: #ffffff;
+}
+
+.container-box {
+    border-radius: 10px;
+}
+
+.btn {
+    font-size: 0.8em;
+    width: 8.5em;
+    color: #ffffff;
+    height: 3em;
+    margin: 1em 0.55em;
+    background-image: linear-gradient(45deg, rgb(43, 0, 143), rgb(210, 0, 52));
+    border-radius: 2em;
+    /* transform: scale(1.15); */
+    transition-duration: 500ms;
+    transition-property: all;
+}
+
+.btn:hover {
+    transform: scale(1.10);
+    transition-duration: 400ms;
+    transition-property: all;
+    color: #ffffff;
+}
+
+.cardes {
+    background-size: cover;
+    background-image: url(/public/sand.jpg);
+    border: none;
+    width: 100%;
+    height: max-content;
+    padding: 20px;
+    border-radius: 1em;
+    border: 1px soild white;
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+@media (min-width: 992px) {
+    
+    .item-box,
+    .cardes {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+.boxText{
+    font-family: oswald;
+}
+
+.boxHead{
+    font-size: 1.5em;
+}

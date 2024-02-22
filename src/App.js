@@ -32,8 +32,8 @@ export default function App() {
 
   return (
     <div style={{ backgroundColor: mode === "light" ? "white" : "black" }} >
-      {/* <MovingText mode={mode} /> */}
       <Navbar title={title} mode={mode} text={text} toggleMode={toggleMode} />
+      <MovingText mode={mode} />
       <Routes>
         <Route index element={<TextUtils mode={mode} title={title} />} />
         <Route path='/textUtils' element={<TextUtils mode={mode} title={title} />} />

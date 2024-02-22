@@ -2,6 +2,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 
 import React from 'react'
+import "./Cardmenu.css"
 
 export default function CardMenu(props) {
 

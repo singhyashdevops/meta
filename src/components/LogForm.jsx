@@ -1,4 +1,5 @@
 import React from 'react'
+import "./Companies.css"
 
 export default function LogForm(props) {
 

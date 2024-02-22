@@ -1,0 +1,32 @@
+.footerHead,
+.footer-text {
+    font-family: 'oswald', sans-serif;
+    background: linear-gradient(to top, rgb(186, 0, 0), rgb(157, 0, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.footer-description{
+    font-family: 'oswald', sans-serif;
+   color: #ffffff;
+   font-size: 0.9em;
+}
+
+.footer-light{
+    background: linear-gradient(to top, rgb(186, 0, 0), rgb(157, 0, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+
+.footer-link-c2, .footer-link-c1, .footer-link-c3, .footer-link-c4{
+    font-size: 0.9em;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}

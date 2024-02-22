@@ -3,8 +3,7 @@ import React from 'react'
 export default function Tags(props) {
 
     let paraStyle = { fontSize: "1em", color: props.mode === "light" ? "black" : "#0070ff", padding: "3em 0em", fontFamily: 'oswald' }
-
-
+    
     return (
         <div className='container'>
             <div>
