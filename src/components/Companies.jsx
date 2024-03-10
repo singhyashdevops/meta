@@ -43,12 +43,6 @@ export default function Companies(props) {
                     </div>
                     <div className="col" >
                         <div className="card">
-                            <img src="apple-logo.jpg" className="card-img-top" alt="..." />
-                        </div>
-                        <p className="card-title" style={cardStyle}>Apple</p>
-                    </div>
-                    <div className="col" >
-                        <div className="card">
                             <img src="google-logo.jpg" className="card-img-top" alt="..." />
                         </div>
                         <p className="card-title" style={cardStyle}>Google</p>
