@@ -53,7 +53,7 @@ export default function TextUtils(props) {
     return (
         <>
             <div>
-                <div id="carouselExampleCaptions" className="carousel slide">
+                <div id="carouselExampleCaptions container" className="carousel slide">
                     <div className="carousel-inner headerImage">
                         <div className="carousel-item active" id='picture1' >
                             <div className="carousel-caption d-md-block">
